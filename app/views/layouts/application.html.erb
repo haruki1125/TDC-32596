@@ -8,6 +8,40 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <header>
+    <div class= 'line'>
+    <div class= 'display'>
+      <%= image_tag("24bae56cf719cbf66e92540cfa88e9bb.png", class:"mini-logo") %>
+      <p class= 'line-text'>TDCラインアカウント</p>
+    </div>
+    <div class= 'display'>
+      <p class='line-log'> 登録はこちらをタッチ→</p>
+      <%= link_to image_tag("315f499d73553a11185b0ce15bde9011.png", class:"friend"), "/" %>
+      <%= link_to image_tag("e29df0c5db1d6c1590d9645d24ffb17d.png", class:"friend"), "/" %>
+    </div>
+    </div>
+    <div class= 'second-header'>
+      <%= link_to image_tag("24bae56cf719cbf66e92540cfa88e9bb.png", class:"second-logo"), "/" %>
+      <p class= 'TBD-text'>私たちは豊田市に住む飲食店経営者とそのお客様を応援しております。</p>
+          <%# ログインしているときは以下を表示するようにしましょう %>
+          <div class= 'user'>
+          <% if user_signed_in? %>
+            <div class="nav__right">
+              <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :nav__btn %>
+              
+            </div>
+          <%# // ログインしているときは上記を表示するようにしましょう %>
+          <% else %>
+          <%# ログインしていないときは以下を表示するようにしましょう %>
+            <div class="nav__right">
+              <%= link_to "ログイン", new_user_session_path, class: :nav__btn %>
+              <%= link_to "新規登録", new_user_registration_path, class: :nav__btn %>
+            </div>
+          <%# // ログインしていないときは上記を表示するようにしましょう %>
+          <% end %>
+          </div>
+    </div>
+  </header>
 
   <body>
     <%= yield %>

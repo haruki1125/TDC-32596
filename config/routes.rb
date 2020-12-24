@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to: 'tdc/index'
+  devise_for :users
+  root to: "tdc#index"
   resources :tdc
   
 end

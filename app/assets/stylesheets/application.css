@@ -1,15 +1,180 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* {
+  box-sizing: border-box;
+}
+
+
+.line {
+  background-color: #f2f2f2;
+  width: 100%;
+  min-width: 800px;
+  display: flex;
+  align-items: center;
+  height: 70px;
+  border: 1px #EEEEEE solid;
+  justify-content: space-between;
+}
+.line-text {
+  font-family: serif;
+  margin-right: 40px;
+
+}
+.mini-logo {
+  border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    margin: auto 40px;
+    
+    
+}
+.display {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.line-log {
+  font-family: fantasy;
+  margin: auto 20px;
+}
+
+.friend {
+  border-radius: 10px;
+  height: 40px;
+  width: 240px;
+  border: 1px #EEEEEE solid;
+  margin-right: 5px;
+}
+
+.second-header {
+  width: 100%;
+  min-width: 800px;
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  margin: 0;
+  padding:0;
+  border: 1px #EEEEEE solid;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-logo {
+  width: 185px;
+  height: 60px;
+}
+
+.TBD-text {
+  margin-left: 20px;
+  font-family: serif;
+}
+
+.user {
+  margin: 20px;
+}
+
+.nav__logout{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #EAA239;
+  text-decoration: none;
+  user-select: none;
+}
+.nav__logout:hover{
+  opacity: 0.5;
+}
+
+.nav__btn{
+  display: inline-block;
+  padding: 0.4em 1.6em;
+  font-size: 0.8em;
+  color: #EAA239;
+  text-decoration: none;
+  user-select: none;
+  border: 1px #EAA239 solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+  margin-left: 10px;
+}
+.nav__btn:hover{
+  color: #fff;
+  background: #EAA239;
+}
+
+
+/* topページ画像 */
+
+.text {
+  display: block;
+  font-size: large;
+}
+
+.back-color {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 100%;
+}
+
+.border {
+  border: 1px #EEEEEE solid;
+  background-color: #FFFFFF;
+  margin: 0 10px 40px 10px;
+}
+
+
+.top-images {
+  background-color: #5D5D5D;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 40px;
+}
+
+.category-text {
+  margin-left: 60px;
+}
+
+.category-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+  
+}
+
+.category {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.container {
+  margin: 50px;
+}
+
+
+.shop-top {
+  margin: 10px auto;
+  width: 500px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #e78403;
+  border-radius: 10px;
+}
+
+.shop-form {
+  text-align: center;
+}
+.shop-btn {
+  display: flex;
+  justify-content: center;
+}
+.item-red-btn {
+  text-align: center;
+  background-color: #ea352d;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 2vh 10vw;
+  margin: 0 auto;
+  text-decoration: none;
+}

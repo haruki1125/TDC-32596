@@ -1,24 +1,20 @@
-# README
+users テーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Column     | Type       | Options                        |
+| ------     | ---------- | ------------------------------ |
+| email      | string     | null: false,                   |
+| password   | string     | null: false,                   |
+| name       | string     | null: false,                   |
 
-Things you may want to cover:
+### Association
+has_one :shop
 
-* Ruby version
+shops テーブル
 
-* System dependencies
+| shop-name        | string     | null: false,                   |
+| price_id         | integer    | null: false,                   |
+| item_category_id | integer    | null: false,                   |
+| text             | string     | null: false,                   |
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
+belongs :user
