@@ -8,6 +8,7 @@ class Category < ActiveHash::Base
     { id: 3, name: '寿司' },
     { id: 4, name: 'ラーメン' },
     { id: 5, name: '居酒屋' },
-    { id: 6, name: 'その他' }
+    { id: 6, name: 'cafe' },
+    { id: 7, name: 'その他' }
   ]
 end

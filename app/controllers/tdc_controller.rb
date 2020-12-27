@@ -1,5 +1,6 @@
 class TdcController < ApplicationController
   def index
+    @shops = Shop.all
   end
   def new
     @shop = Shop.new
@@ -11,6 +12,10 @@ class TdcController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+    
   end
 
   private

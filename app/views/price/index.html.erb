@@ -1,0 +1,9 @@
+
+<% @shops.each do |shop| %>
+<div class='category-page'>
+  <%= image_tag shop.image, class: "item-img" %>
+  <%= shop.category.name %>
+  <%= shop.shop_name %>
+  <%= shop.pri_id.name %>
+</div>
+<% end %>

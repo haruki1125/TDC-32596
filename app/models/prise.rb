@@ -7,7 +7,8 @@ class Prise < ActiveHash::Base
     { id: 2, name: '0 ~ 1000円' },
     { id: 3, name: '1000 ~ 2000円' },
     { id: 4, name: '2000 ~ 3000円' },
-    { id: 5, name: '5000 ~ 10000円' },
-    { id: 6, name: '10000円以上' }
+    { id: 5, name: '3000 ~ 5000円' },
+    { id: 6, name: '5000 ~ 10000円' },
+    { id: 7, name: '10000円以上' }
   ]
 end
