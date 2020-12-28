@@ -1,5 +1,18 @@
+<h2 class='kensaku'>検索結果</h2>
 <% @shops.each do |shop| %>
-  <%= shop.category.name %>
-  <%= shop.shop_name %>
+<div class='category-page'>
   <%= image_tag shop.image, class: "item-img" %>
+  <div class='shop-text'>
+  <%= shop.category.name %>
+  </div>
+  <div class='shop-text'>
+  <%= shop.shop_name %>
+  </div>
+  <div class='shop-text'>
+  <%= shop.price.name %>
+  </div>
+  <div class='shop-info'>
+  <%= shop.info %>
+  </div>
+</div>
 <% end %>

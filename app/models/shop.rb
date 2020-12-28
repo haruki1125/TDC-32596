@@ -1,11 +1,11 @@
 class Shop < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :user
-  belongs_to :prise
+  belongs_to :price
   belongs_to :category
 
   has_one_attached :image
-  
+
   with_options presence: true do
     validates :shop_name
     validates :info

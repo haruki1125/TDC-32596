@@ -51,7 +51,7 @@
           値段
           <span class="indispensable">必須</span>
         </div>
-        <%= f.collection_select(:price_id, Prise.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
+        <%= f.collection_select(:price_id, Price.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
       </div>
     </div>
     <%# /商品の詳細 %>

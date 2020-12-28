@@ -1,4 +1,4 @@
-class Prise < ActiveHash::Base
+class Price < ActiveHash::Base
   include ActiveHash::Associations
   has_many :shops
 
@@ -12,3 +12,4 @@ class Prise < ActiveHash::Base
     { id: 7, name: '10000円以上' }
   ]
 end
+
