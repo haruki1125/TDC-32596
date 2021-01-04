@@ -145,7 +145,6 @@ body {
 }
 
 .category {
-  background-color: #F2F2F2;
   height: 200px;
   width: 200px;
   margin-bottom: 30px;
@@ -153,6 +152,11 @@ body {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+
+.cate {
+  height: 200px;
+  width: 200px;
 }
 
 .container {
@@ -183,16 +187,17 @@ body {
   font-weight: bold;
   color: #FFF;
   padding: 2vh 10vw;
-  margin: 0 auto;
+  margin: 20px auto;
   text-decoration: none;
 }
 
 .category-page {
-  border: 1px #EEEEEE solid;
+  border: 1px #E0A44F solid;
   width: 80%;
-  margin: 20px auto;
+  margin: auto;
   text-align: center;
-  
+  margin-bottom: 20px;
+  background-color: #fcfcfc;
 }
 
 .item-img {
@@ -205,12 +210,22 @@ body {
 }
 
 .shop-info{
-  border: 1px #EEEEEE solid;
+  border: 1px #e78403 solid;
   width: 500px;
   margin: 10px auto;
   padding: 10px;
+
 }
 
 .kensaku {
   text-align: center;
+}
+
+.info {
+  width: 450px;
+}
+
+.back {
+  background-color: #F2F2F2;
+  padding-top: 20px;
 }

@@ -1,17 +1,19 @@
-<% @shops.each do |shop| %>
-<div class='category-page'>
-  <%= image_tag shop.image, class: "item-img" %>
-  <div class='shop-text'>
-  <%= shop.category.name %>
+<div class = "back">
+  <% @shops.each do |shop| %>
+  <div class='category-page'>
+    <%= image_tag shop.image, class: "item-img" %>
+    <div class='shop-text'>
+    <%= shop.category.name %>
+    </div>
+    <div class='shop-text'>
+    <%= shop.shop_name %>
+    </div>
+    <div class='shop-text'>
+    <%= shop.price.name %>
+    </div>
+    <div class='shop-info'>
+        <%= shop.info %>
+    </div>
   </div>
-  <div class='shop-text'>
-  <%= shop.shop_name %>
-  </div>
-  <div class='shop-text'>
-  <%= shop.price.name %>
-  </div>
-  <div class='shop-info'>
-  <%= shop.info %>
-  </div>
+  <% end %>
 </div>
-<% end %>
