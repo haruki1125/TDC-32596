@@ -201,19 +201,27 @@ body {
 }
 
 .item-img {
-  width: 100%;
+  width: 90%;
   height: 400px;
+  margin-top: 10px;
 }
 
 .shop-text {
   margin: 5px auto;
 }
 
+.items-sell-title {
+  text-align: center;
+}
+
 .shop-info{
   border: 1px #e78403 solid;
-  width: 500px;
+  width: 70%;
   margin: 10px auto;
   padding: 10px;
+  text-align: center;
+  overflow: scroll;
+  
 
 }
 
@@ -228,4 +236,88 @@ body {
 .back {
   background-color: #F2F2F2;
   padding-top: 20px;
+}
+
+.border2{
+  height: 100px;
+  background-color: #FFF;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  text-align: center;
+  margin: auto;
+}
+
+.top {
+  background-color: #DB7036;
+  width: 100vw;
+  height: 100px;
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-family: serif;
+}
+.p-box {
+  border: #E8EAED 1px solid;
+  border-radius: 10px;
+  height: 1200px;
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 5px;
+  font-family: serif;
+}
+
+.images{
+  height: 10%;
+  width: 10%;
+}
+
+.info {
+  border: #E8EAED 1px solid;
+  height: 300px;
+  width: 90%;
+  margin: 5px auto 0 auto;
+  display: flex;
+  padding: 5px;
+}
+
+.videos {
+  height: 100%;
+  width: 50%;
+  background-color: #000000;
+  margin-right: 5px;
+}
+
+
+
+.message {
+  height: 300px;
+  width: 90%;
+  margin: 10px auto;
+  border: #E8EAED 1px solid;
+}
+
+span {
+  color: red;
+}
+
+.info-info{
+  width: 40%;
+  margin: auto;
+  background-color: #FFF;
+  padding: 20px;
+}
+
+.items-sell-main {
+  background-color: #F5F5F5;
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
 }

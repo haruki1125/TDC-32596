@@ -7,6 +7,7 @@
     <%# //インスタンスを渡して、エラー発生時にメッセージが表示されるようにしましょう。%>
 
     <%# 出品画像 %>
+    <div class="info-info">
     <div class="img-upload">
       <div class="weight-bold-text">
         画像
@@ -32,7 +33,7 @@
           店舗の説明
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :info, class:"items-text", id:"item-info", placeholder:"店舗の説明（必須 1,000文字まで）（住所、料理、席数、など）" ,rows:"7" ,maxlength:"1000" %>
+        <%= f.text_area :info, class:"items-text", id:"item-info", placeholder:"店舗の説明（必須 1,000文字まで）（住所、料理、席数、予約のできるサイトのURL、電話番号、など）" ,rows:"7" ,maxlength:"1000" %>
       </div>
     </div>
     <%# /商品名と商品説明 %>
@@ -54,12 +55,14 @@
         <%= f.collection_select(:price_id, Price.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
       </div>
     </div>
+    
     <%# /商品の詳細 %>
     <%# 下部ボタン %>
     <div class="sell-btn-contents">
-      <%= f.submit "出品する" ,class:"sell-btn" %>
+      <%= f.submit "登録する" ,class:"sell-btn" %>
       <%=link_to 'もどる', root_path, class:"back-btn" %>
     </div>
     <%# /下部ボタン %>
   </div>
   <% end %>
+  </div>

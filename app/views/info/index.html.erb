@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>portforio</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+<div class='top'>
+<h1>大内晴貴のポートフォリオ解説</h1>
+</div>
+<div class='p-box'>
+  <h2>テーマ: 1からアプリを作るという経験をする。</h2>
+  <p>使用した言語など</p>
+  <div class='image-box'>
+    <%= image_tag"スクリーンショット-2018-12-13-11.34.09.png", class:"images" %>
+    <%= image_tag"download-1.png", class:"images" %>
+    <%= image_tag"fd39f7be9f2aaa62e16506e9aa2882f4.png", class:"images" %>
+    <%= image_tag"download-2.png", class:"images" %>
+    <%= image_tag"square_274b1338-1884-4eb3-ad8f-bb159162c810.png", class:"images" %>
+  </div>
+  <div class='info'>
+    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <p>こちらのアプリは私の地元豊田市の飲食店をスマホやラインで簡単に探せるアプリとなっております。見た目はシンプルで使いやすい物をイメージしました。特にデザインで意識したところは<span>凹凸の付け方</span>です。大手のwebサイトでは色の使い方で凹凸を表現しているように感じ自分も見様見真似ですが再現してみました</p>
+  </div>
+  <div class='info'>
+    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <p>公式ラインを追加することによって<span>ラインでお店を探す</span>ことができユーザーにとってとても使いやすいアプリになっていると考えられます。</p>
+  </div>
+  <div class='message'>
+    <h2>反省・これからの課題</h2>
+    <ul>
+      <li>デザインの学習不足</li>
+      <li>工数のかかりすぎ</li>
+      <li>設計が甘い</li>
+    </ul>
+    <p>今回のアプリを作ってみてrubyの構造が頭の中で整理された感覚があったのと<span>canvaやlineとの同期</span>など経験ができそれらは非常によかったと思うがデータベース設計が甘かったり昨日の設計がうまくでいていなかったり経験不足を非常によく感じることができ経験としては良いものとなったと思います</p>
+  </div>
+</div>
+<div class='p-box'>
+  <h2>テーマ: gemを使用し高速でアプリを作成する</h2>
+  <p>使用した言語など</p>
+  <div class='image-box'>
+    <%= image_tag"スクリーンショット-2018-12-13-11.34.09.png", class:"images" %>
+    <%= image_tag"download-1.png", class:"images" %>
+    <%= image_tag"fd39f7be9f2aaa62e16506e9aa2882f4.png", class:"images" %>
+    <%= image_tag"download-2.png", class:"images" %>
+  </div>
+  <div class='info'>
+    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <p>こちらのアプリは予約アプリとなっており先ほどのアプリと同時に使って頂くと非常に便利なアプリとなっております。ユーザー登録がないため<span>1分で予約が可能</span>です</p>
+  </div>
+  <div class='info'>
+    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <p>シンプルカレンダーというgemを使うことで非常に早くアプリを作成することができ、rubyという言語の特性をうまく使えた感じがしました。</p>
+  </div>
+  <div class='message'>
+    <h2>反省・これからの課題</h2>
+    <ul>
+      <li>スマホで見ると文字やボタンが小さい</li>
+      <li>プロの仕事とは言えない</li>
+    </ul>
+    <p>今回のアプリをスマホで確認してみるとボタンや文字が小さく見にくいなどシンプルカレンダーが英語で使いずらいなど様々な問題点がありプロの仕事とは言えないという反省点が残りました。ですが今回のアプリ作成でgemの凄さが非常によくわかりました。実際に今回のアプリを<span>作成するまでに掛かった時間は3日</span>という結果になり非常によかったと思います。それとアプリ作成が２つ目ということもあり経験によって時間短縮ができたと思い改めて経験の大事さを感じました。</p>
+  </div>
+</div>
+<div class='p-box'>
+  <h2>テーマ: docker jquely javascriptを使用し作成する</h2>
+  <p>使用した言語など</p>
+  <div class='image-box'>
+    <%= image_tag"スクリーンショット-2018-12-13-11.34.09.png", class:"images" %>
+    <%= image_tag"download-1.png", class:"images" %>
+    <%= image_tag"fd39f7be9f2aaa62e16506e9aa2882f4.png", class:"images" %>
+    <%= image_tag"download-3.png", class:"images" %>
+    <%= image_tag"js.png", class:"images" %>
+    <%= image_tag"lfVWBmiW_400x400.png", class:"images" %>
+  </div>
+  <div class='info'>
+    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <p>メモアプリを作成、showroomの前田社長が書かれたメモの魔力という本の内容を参考に作成したメモアプリです。</p>
+  </div>
+  <div class='info'>
+    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <p>jquelyを使用しオシャレな？ページを作成</p>
+  </div>
+  <div class='info'>
+    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <p>javascriptを使用し非同期通信を可能にしております。</p>
+  </div>
+  <div class='info'>
+    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <p>ノートの中身はこのようになっており前田さんのノートの取り方をそのまま再現できるようになっています。cssでノートを作成するのは難しかったですが意外と上手くいって本人は満足しています。</p>
+  </div>
+  <div class='message'>
+    <h2>反省・これからの課題</h2>
+    <ul>
+      <li>dockerを使用しアプリを作成した</li>
+    </ul>
+    <p>dockerを使用し環境構築し本番環境に</p>
+  </div>
+</div>
