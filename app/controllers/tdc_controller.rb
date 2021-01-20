@@ -1,4 +1,5 @@
 class TdcController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   def index
     @shops = Shop.all
   end

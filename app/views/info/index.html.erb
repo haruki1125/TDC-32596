@@ -4,7 +4,6 @@
     <title>portforio</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -22,15 +21,23 @@
     <%= image_tag"square_274b1338-1884-4eb3-ad8f-bb159162c810.png", class:"images" %>
   </div>
   <div class='info'>
-    <video src="/assets/videos/cd3052202d3041ecd26684f2f834a2cc" autoplay loop muted, class='videos'></video>
+    <%= video_tag  "cd3052202d3041ecd26684f2f834a2cc.mp4",:controls => true, :loop => true,class:"videos" %>
     <p>こちらのアプリは私の地元豊田市の飲食店をスマホやラインで簡単に探せるアプリとなっております。見た目はシンプルで使いやすい物をイメージしました。特にデザインで意識したところは<span>凹凸の付け方</span>です。大手のwebサイトでは色の使い方で凹凸を表現しているように感じ自分も見様見真似ですが再現してみました</p>
   </div>
   <div class='info'>
-    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
-    <p>公式ラインを追加することによって<span>ラインでお店を探す</span>ことができユーザーにとってとても使いやすいアプリになっていると考えられます。</p>
+    <%= video_tag  "e93117c23e9544dcbca9a1376584bd95.mp4",:controls => true, :loop => true,class:"videos" %>
+    <p>中もシンプルにこの様な感じです。</p>
+  </div>
+  <div class='info'>
+    <%= video_tag  "7277fa43db537e6a86b5a2f5ab9ee480.mp4",:controls => true, :loop => true,class:"videos" %>
+    <p>公式ラインを追加することによって<span>ラインでお店を探す</span>ことができ<span>スマホなどでラインをダウンロードしている場合はすぐに「友達を追加する」のボタンがある画面にとびます。</span></p>
+  </div>
+  <div class='info'>
+    <%= video_tag  "1217.t.mp4",:controls => true, :loop => true,:muted => true,class:"videos" %>
+    <p>左の動画の様に特定の言葉を打って頂くと、それに合ったページを返してくれます。</p>
   </div>
   <div class='message'>
-    <h2>反省・これからの課題</h2>
+    <h2>感想</h2>
     <ul>
       <li>デザインの学習不足</li>
       <li>工数のかかりすぎ</li>
@@ -49,15 +56,23 @@
     <%= image_tag"download-2.png", class:"images" %>
   </div>
   <div class='info'>
-    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <%= video_tag  "5effe7b26882ba0ed504478a3edc9f2d.mp4",:controls => true, :loop => true,class:"videos" %>
     <p>こちらのアプリは予約アプリとなっており先ほどのアプリと同時に使って頂くと非常に便利なアプリとなっております。ユーザー登録がないため<span>1分で予約が可能</span>です</p>
   </div>
   <div class='info'>
-    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
-    <p>シンプルカレンダーというgemを使うことで非常に早くアプリを作成することができ、rubyという言語の特性をうまく使えた感じがしました。</p>
+    <%= video_tag  "8624e0118d44cebca0b905124c0917f6.mp4",:controls => true, :loop => true,class:"videos" %>
+    <p>入力するだけで予約完了</p>
+  </div>
+  <div class='info'>
+    <%= video_tag  "8c4dadeef51312bf8e78a3458792f507.mp4",:controls => true, :loop => true,class:"videos" %>
+    <p>店舗側からもメッセージを表示させることができます</p>
+  </div>
+  <div class='info'>
+    <%= video_tag  "eecac90f627487215cd17dfef3fdfead.mp4",:controls => true, :loop => true,class:"videos" %>
+    <p>店舗側からは情報を編集することが出来ます</p>
   </div>
   <div class='message'>
-    <h2>反省・これからの課題</h2>
+    <h2>感想</h2>
     <ul>
       <li>スマホで見ると文字やボタンが小さい</li>
       <li>プロの仕事とは言えない</li>
@@ -77,26 +92,33 @@
     <%= image_tag"lfVWBmiW_400x400.png", class:"images" %>
   </div>
   <div class='info'>
-    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <%= image_tag"03_A04A7613-696x464.jpg", class:"videos" %>
     <p>メモアプリを作成、showroomの前田社長が書かれたメモの魔力という本の内容を参考に作成したメモアプリです。</p>
   </div>
   <div class='info'>
-    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <%= video_tag  "f46c5cf2aa1e76d286edddecdcaf89a1.mp4",:controls => true, :loop => true,class:"videos" %>
     <p>jquelyを使用しオシャレな？ページを作成</p>
   </div>
   <div class='info'>
-    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <%= video_tag  "b41faf6948ba95f2277358367eaa4db7.mp4",:controls => true, :loop => true,class:"videos" %>
     <p>javascriptを使用し非同期通信を可能にしております。</p>
   </div>
   <div class='info'>
-    <video src="/assets/videos/video.mp4" autoplay loop muted, class='videos'></video>
+    <%= video_tag  "e7ce8e4b4f580afe6636702b38c98f8f.mp4",:controls => true, :loop => true,class:"videos" %>
     <p>ノートの中身はこのようになっており前田さんのノートの取り方をそのまま再現できるようになっています。cssでノートを作成するのは難しかったですが意外と上手くいって本人は満足しています。</p>
   </div>
-  <div class='message'>
-    <h2>反省・これからの課題</h2>
+  <div class='message2'>
+    <h2>感想</h2>
     <ul>
-      <li>dockerを使用しアプリを作成した</li>
+      <li>dockerを使用し環境構築することが少しだけ出来た。</li>
+      <li>jquelyはイメージしたまま完璧に出来た。</li>
+      <li>アプリとしてはめちゃくちゃ使いやすい！</li>
     </ul>
-    <p>dockerを使用し環境構築し本番環境に</p>
+    <p>分かってはいたがdockerかなり難しかったので正直完璧に理解は出来ていない状況です。ですがdockerを使用し環境構築することで、<span>dockerという物自体に慣れることが出来き非常に良かった。</span>jquelyはコードも書きやすくしっかりとアニメーションが出来そうだったのでやってみましたが、想像以上に上手く簡単に出来たのでよかったです！非同期通信に関してはなかなか理解に時間が掛かってしまいましたが何とか形にすることが出来ました。アプリ本体に関しては、ほんとに使いやすい！実用性が非常にあり自分は毎日多様している程です。なかなか<span>メモにメモをできるアプリがなかった</span>ため作成したのですがとても良かったです。</p>
   </div>
+</div>
+
+<div class='info'>
+    <%= image_tag"スクリーンショット-2018-12-13-11.34.09.png", class:"apuri" %>
+    
 </div>
