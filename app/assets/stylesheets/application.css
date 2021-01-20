@@ -127,10 +127,15 @@ body {
 
 
 .top-images {
-  background-color: #a4a4a4;
-  width: 100%;
-  height: 400px;
+
+  width: 100vw;
+  height: 500px;
   margin-bottom: 40px;
+
+}
+.image-ttop{
+  width: 100%;
+  height: 100%;
 }
 
 .category-text {

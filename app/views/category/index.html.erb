@@ -14,5 +14,6 @@
   <div class='shop-info'>
   <%= shop.info %>
   </div>
+  <%= link_to '削除', category_path(shop.id), method: :delete, class:'btn' %>
 </div>
 <% end %>
