@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: TDC_32596_production
-  username: TDC_32596
-  password: <%= ENV['TDC_32596_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
