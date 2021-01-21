@@ -270,11 +270,10 @@ body {
 .p-box {
   border: #E8EAED 1px solid;
   border-radius: 10px;
-  height: 1800px;
   width: 90%;
   margin: 20px auto;
   text-align: center;
-  padding: 5px;
+  padding: 20px;
   font-family: serif;
 }
 
@@ -285,11 +284,16 @@ body {
 
 .info {
   border: #E8EAED 1px solid;
-  height: 300px;
   width: 90%;
+  height: 300px;
   margin: 5px auto 0 auto;
   display: flex;
   padding: 5px;
+  text-align: left;
+}
+
+.info-box{
+  text-align: left;
 }
 
 .videos {
@@ -302,7 +306,6 @@ body {
 
 
 .message {
-  height: 260px;
   width: 90%;
   margin: 15px auto;
   border: #CE7544 1px solid;
@@ -310,11 +313,14 @@ body {
 }
 
 .message2 {
-  height: 280px;
   width: 90%;
   margin: 15px auto;
   border: #CE7544 1px solid;
   padding: 0 10px;
+}
+
+.message2 p{
+  text-align: left;
 }
 
 .message2 ul {
@@ -349,7 +355,50 @@ span {
 
 .apuri {
   height: 100%;
-  width: 50%;
+  width: 30%;
   background-color: #000000;
-  margin-right: 5px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.info2 {
+  width: 70%;
+  margin: 5px auto 0 auto;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+}
+
+.apri {
+  margin: 20px auto;
+  width: 90%;
+  background-color: #CE754433;
+  width: 30%;
+  text-align: center;
+}
+
+.info2 p{
+width: 70%;
+}
+
+.last {
+  margin:auto;
+  font-size: large;
+  width: 90%;
+}
+
+.info3 {
+  width: 70%;
+  margin: 50px auto 100px auto;
+  padding: 20px;
+  border: solid 1px #CE754480;
+}
+
+.back-btn{
+  text-decoration: none;
+  background-color: rgb(210, 130, 17);
+  padding: 2px;
+  border-radius: 10px;
+  font-size: large;
+  color: #FFF;
 }

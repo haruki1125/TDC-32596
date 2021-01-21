@@ -22,11 +22,17 @@
   </div>
   <div class='info'>
     <%= video_tag  "cd3052202d3041ecd26684f2f834a2cc.mp4",:controls => true, :loop => true,class:"videos" %>
-    <p>こちらのアプリは私の地元豊田市の飲食店をスマホやラインで簡単に探せるアプリとなっております。見た目はシンプルで使いやすい物をイメージしました。特にデザインで意識したところは<span>凹凸の付け方</span>です。大手のwebサイトでは色の使い方で凹凸を表現しているように感じ自分も見様見真似ですが再現してみました</p>
+    <div class="info-box">
+    <p>こちらのアプリは私の地元豊田市の飲食店をスマホやラインで簡単に探せるアプリとなっております。</p>
+    <p>見た目はシンプルで使いやすい物をイメージしました。特にデザインで意識したところは<span>凹凸の付け方</span>です。大手のwebサイトでは色の使い方で凹凸を表現しているように感じ自分も見様見真似ですが再現してみました</p>
+    </div>
   </div>
   <div class='info'>
     <%= video_tag  "e93117c23e9544dcbca9a1376584bd95.mp4",:controls => true, :loop => true,class:"videos" %>
+    <div class="info-box">
     <p>中もシンプルにこの様な感じです。</p>
+    <p>画像の保存に関しては<span>S3</span>を使用しているので消えることはございません</p>
+    </div>
   </div>
   <div class='info'>
     <%= video_tag  "7277fa43db537e6a86b5a2f5ab9ee480.mp4",:controls => true, :loop => true,class:"videos" %>
@@ -35,6 +41,10 @@
   <div class='info'>
     <%= video_tag  "1217.t.mp4",:controls => true, :loop => true,:muted => true,class:"videos" %>
     <p>左の動画の様に特定の言葉を打って頂くと、それに合ったページを返してくれます。</p>
+  </div>
+  <div class='info'>
+    <%= image_tag"eyecatch-2016-09-07-001.jpg", class:"videos" %>
+    <p>AWSにてデプロイサクサク動きます。</p>
   </div>
   <div class='message'>
     <h2>感想</h2>
@@ -45,6 +55,7 @@
     </ul>
     <p>今回のアプリを作ってみてrubyの構造が頭の中で整理された感覚があったのと<span>canvaやlineとの同期</span>など経験ができそれらは非常によかったと思うがデータベース設計が甘かったり昨日の設計がうまくでいていなかったり経験不足を非常によく感じることができ経験としては良いものとなったと思います</p>
   </div>
+  <%=link_to 'ポートフォリオを見に行く', "/", class:"back-btn" %>
 </div>
 <div class='p-box'>
   <h2>テーマ: gemを使用し高速でアプリを作成する</h2>
@@ -71,6 +82,10 @@
     <%= video_tag  "eecac90f627487215cd17dfef3fdfead.mp4",:controls => true, :loop => true,class:"videos" %>
     <p>店舗側からは情報を編集することが出来ます</p>
   </div>
+  <div class='info'>
+    <%= image_tag"eyecatch-2016-09-07-001.jpg", class:"videos" %>
+    <p>AWSにてデプロイサクサク動きます。</p>
+  </div>
   <div class='message'>
     <h2>感想</h2>
     <ul>
@@ -79,6 +94,7 @@
     </ul>
     <p>今回のアプリをスマホで確認してみるとボタンや文字が小さく見にくいなどシンプルカレンダーが英語で使いずらいなど様々な問題点がありプロの仕事とは言えないという反省点が残りました。ですが今回のアプリ作成でgemの凄さが非常によくわかりました。実際に今回のアプリを<span>作成するまでに掛かった時間は3日</span>という結果になり非常によかったと思います。それとアプリ作成が２つ目ということもあり経験によって時間短縮ができたと思い改めて経験の大事さを感じました。</p>
   </div>
+  <%=link_to 'ポートフォリオを見に行く', "http://52.69.74.174", class:"back-btn" %>
 </div>
 <div class='p-box'>
   <h2>テーマ: docker jquely javascriptを使用し作成する</h2>
@@ -93,7 +109,7 @@
   </div>
   <div class='info'>
     <%= image_tag"03_A04A7613-696x464.jpg", class:"videos" %>
-    <p>メモアプリを作成、showroomの前田社長が書かれたメモの魔力という本の内容を参考に作成したメモアプリです。</p>
+    <p>メモアプリを作成、showroomの前田社長が書かれた<span>メモの魔力</span>という本の内容を参考に作成したメモアプリです。</p>
   </div>
   <div class='info'>
     <%= video_tag  "f46c5cf2aa1e76d286edddecdcaf89a1.mp4",:controls => true, :loop => true,class:"videos" %>
@@ -101,12 +117,16 @@
   </div>
   <div class='info'>
     <%= video_tag  "b41faf6948ba95f2277358367eaa4db7.mp4",:controls => true, :loop => true,class:"videos" %>
+    <div class="info-box">
     <p>javascriptを使用し非同期通信を可能にしております。</p>
+    <p>（現在デプロイされたアプリではエラーよってjavascriptが反映されていないため原因が解決しだい実装します。ローカルでは起動確認済、また画像に関してもデプロイ時反映されていないというエラーがありそれも原因が解決しだい実装します。）</p>
+  </div>
   </div>
   <div class='info'>
     <%= video_tag  "e7ce8e4b4f580afe6636702b38c98f8f.mp4",:controls => true, :loop => true,class:"videos" %>
     <p>ノートの中身はこのようになっており前田さんのノートの取り方をそのまま再現できるようになっています。cssでノートを作成するのは難しかったですが意外と上手くいって本人は満足しています。</p>
   </div>
+  
   <div class='message2'>
     <h2>感想</h2>
     <ul>
@@ -116,9 +136,25 @@
     </ul>
     <p>分かってはいたがdockerかなり難しかったので正直完璧に理解は出来ていない状況です。ですがdockerを使用し環境構築することで、<span>dockerという物自体に慣れることが出来き非常に良かった。</span>jquelyはコードも書きやすくしっかりとアニメーションが出来そうだったのでやってみましたが、想像以上に上手く簡単に出来たのでよかったです！非同期通信に関してはなかなか理解に時間が掛かってしまいましたが何とか形にすることが出来ました。アプリ本体に関しては、ほんとに使いやすい！実用性が非常にあり自分は毎日多様している程です。なかなか<span>メモにメモをできるアプリがなかった</span>ため作成したのですがとても良かったです。</p>
   </div>
+  <%=link_to 'ポートフォリオを見に行く', "https://business-app-32596.herokuapp.com/", class:"back-btn" %>
 </div>
-
-<div class='info'>
-    <%= image_tag"スクリーンショット-2018-12-13-11.34.09.png", class:"apuri" %>
-    
+<h3 class="apri">自分が使った便利なアプリ一覧</h3>
+<div class='info2'>
+    <%= image_tag"mzl.wcnerfrh.jpg", class:"apuri" %>
+    <p>こちらはATOK Padというアプリで、optionnを二回押すだけでメモ帳が出てきてくれるため最速でメモをとることが出来ます！</p>
+</div>
+<div class='info2'>
+    <%= image_tag"20190416024534.png", class:"apuri" %>
+    <p>こちらはshiftitというアプリで、画面分割をキー割り当てをすることで行えるアプリになっております。これによって作業スピードが飛躍的に上がりました！</p>
+</div>
+<h3 class="apri">現在自分がやっていること</h3>
+<div class='info2'>
+    <%= image_tag"swift-og.png", class:"apuri" %>
+    <p>現在私は、swiftを学習しています。webアプリ制作は非常におもしろかったのですが、それと同時にiosアプリに興味がでてきました。そのため今回のポートフォリオを作成が終わったら学習しようと決めていました。swiftで作品が出来ましたらまたポートフォリオに追加したいと思います！</p>
+</div>
+<h3 class="apri">最後に</h3>
+<div class='info3'>
+    <p class="last">ここまで読んで頂き誠にありがとうございます！少しでも良いなと思っていただければ幸いです。</p>
+    <p class="last">もし御社に入社させて頂いた場合には、自分の武器である若さ、積極性、主体性を発揮し御社の利益に全力で貢献致しますのでよろしくお願いします。</p>
+    <p class="last">良いお返事を心よりお待ちしております！</p>
 </div>
