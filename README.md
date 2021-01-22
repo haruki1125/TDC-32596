@@ -37,6 +37,8 @@ has_many :shops
 
 ## shops テーブル
 
+| Column     | Type       | Options                        |
+| ------     | ---------- | ------------------------------ |
 | shop-name        | string     | null: false,                   |
 | price_id         | integer    | null: false,                   |
 | item_category_id | integer    | null: false,                   |
