@@ -12,4 +12,3 @@ class Price < ActiveHash::Base
     { id: 7, name: '10000円以上' }
   ]
 end
-

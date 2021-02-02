@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
 
   def create
   end
-  
+
   def new
     @user = User.new
   end
@@ -13,8 +13,8 @@ class ApplicationController < ActionController::Base
     tweet.destroy
   end
 
-
   private
+
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:nickname])
   end

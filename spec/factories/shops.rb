@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :shop do
-    shop_name{ 'aa' }
+    shop_name { 'aa' }
     info { 'aa' }
     category_id { 2 }
     price_id { 2 }

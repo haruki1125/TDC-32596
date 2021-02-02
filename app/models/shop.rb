@@ -16,5 +16,4 @@ class Shop < ApplicationRecord
     validates :category_id
     validates :price_id
   end
-
 end

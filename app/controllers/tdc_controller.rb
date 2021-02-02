@@ -3,9 +3,11 @@ class TdcController < ApplicationController
   def index
     @shops = Shop.all
   end
+
   def new
     @shop = Shop.new
   end
+
   def create
     @shop = Shop.new(shop_params)
     if @shop.save
@@ -16,7 +18,6 @@ class TdcController < ApplicationController
   end
 
   def show
-    
   end
 
   private
