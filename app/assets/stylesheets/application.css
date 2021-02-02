@@ -292,15 +292,24 @@ body {
   text-align: left;
 }
 
+.info p{
+  width: 50%;
+  padding: 10px;
+}
+
 .info-box{
   text-align: left;
+  width: 50%;
+}
+.info-box p{
+  width: 100%;
+  padding: 10px;
 }
 
 .videos {
   height: 100%;
   width: 50%;
   background-color: #000000;
-  margin-right: 5px;
 }
 
 
